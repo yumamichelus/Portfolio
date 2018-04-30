@@ -1,0 +1,653 @@
+/*
+    This website was originally developed to be the personal portfolio for Yuma Michelus
+    Copyright (C) 2018  Yuma Michelus
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+     This program is distributed in the hope that it will be useful,
+     but WITHOUT ANY WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+     GNU Affero General Public License for more details.
+
+     You should have received a copy of the GNU Affero General Public License
+     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/*Clear Default Margin and Padding settings*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+
+    /*Height 100% For Footer*/
+    height: 100%;
+    /* Overflow: hidden for horizontal scrollbar */
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+body{
+    color: white;
+    font-family: 'Acme', sans-serif;
+    /* Min-height: 100% For Footer */
+    min-height: 100%;
+    font-size: 20px;
+    position: relative;
+    overflow-x: hidden;
+    background-image: url(Images/mainBackground.jpeg);
+    background-repeat: no-repeat;
+}
+
+
+/*START NAVBAR*/
+/*Navbar Style*/
+.homeHeader{
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url(Images/navbarBackground.png);
+    font-size: 20px;
+    box-shadow: 0 5px 36px 0   #000000;
+    margin-top: -10px;
+}
+
+
+/*Navbar Logo*/
+.yumaLogo{
+    margin: 5px 0 5px;
+}
+
+
+.navbarBtn{
+    margin: 10px 0 -10px;
+}
+
+
+.navLinks{
+    margin: 20px 5px 0;
+    border-radius: 10px;
+    color: white;
+    transition: ease .2s;
+}
+
+
+.navLinks:hover{
+    border-radius: 10px;
+}
+
+
+/*Line Under Navbar*/
+.headerLine{
+    margin-top: 10px;
+    padding-top: 5px;
+    background-color: #00B4CF;
+}
+/*END OF NAVBAR*/
+
+
+/*START OF HOMEPAGE*/
+/*Homepage Background Style*/
+.homePageWrap{
+    background: url(Images/mainBackground.jpeg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+.mainPage{
+    margin-top: 30vh;
+}
+
+
+/*Dark Box for Contrast With Background*/
+.shadowBox{
+    background: rgba(0,0,0,.6);
+    font-size: 5vh;
+    padding: 75px 0 75px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+
+.mainName{
+    color: #00B4CF;
+}
+
+
+.workBtn{
+    color: white;
+    font-size: 3vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 3px solid #00B4CF;
+    border-radius: 10px;
+    transition: ease .4s;
+}
+
+
+.workBtn:hover {
+    color: white;
+    background-color: #00B4CF;
+}
+
+
+.workBtn:focus {
+    color: white;
+}
+
+
+/*Line Under Homepage*/
+.bottomLine{
+    padding-top: 5px;
+    background-color: #00B4CF;
+}
+/*END OF HOMEPAGE*/
+
+
+/*ABOUT PAGE*/
+.aboutPageWrap{
+    padding: 50px 0 100px;
+    color: #47494B;
+    background-color: #F5F5F5;
+}
+
+
+.aboutTitle{
+    text-decoration: overline;
+    padding: 50px 0 50px;
+
+}
+
+
+.aboutPic{
+    border-radius: 50%;
+    border: solid 2px #00B4CF;
+    height: 250px;
+}
+
+
+.bioTitle{
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #00B4CF;
+}
+
+
+.bio{
+    margin-top: 2vh;
+}
+
+
+.bioHighlight{
+    color: #00B4CF;
+}
+
+
+.resumeBtn{
+    color: #47494B;
+    border: 3px solid #00B4CF;
+    border-radius: 10px;
+    padding: 5px 0 5px;
+    transition: ease .2s;
+}
+
+
+.resumeBtn:hover{
+    color: white;
+    background-color: #00B4CF;
+    text-decoration: none;
+}
+
+
+.resumeLink{
+   margin-top: 10px;
+}
+
+
+.resumeLink:hover{
+    text-decoration: none;
+}
+
+.resumeLink:focus{
+    text-decoration: none;
+}
+
+
+.listTitle{
+    text-decoration: underline;
+    text-decoration-color: #00B4CF;
+}
+
+
+.skillsPanel{
+    padding: 10px 0 10px;
+    color: white;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
+.skillsPanelTint{
+    background: rgba(0,0,0,.3);
+    padding: 10px 0 10px;
+    margin: -10px 0 -10px;
+    border-radius: 10px;
+}
+
+
+/*Skill Panels*/
+.html{
+    background-image: url(Images/htmlBackground.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.css{
+    background-image: url(Images/cssBackground.jpeg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.bootstrap{
+    background-image: url(Images/bootstrapBackground.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.javascript{
+    background-image: url(Images/javascriptBackground.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.jquery{
+    background-image: url(Images/jqueryBackground.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.c{
+    background-image: url(Images/cBackground.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.cplusplus{
+    background-image: url(Images/cplusplusBackground.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+/*END OF ABOUT PAGE*/
+
+
+/*PORTFOLIO PAGE*/
+.portfolioPageWrap{
+    padding: 50px 0 100px;
+    background-color: white;
+}
+
+
+.projectTitle{
+    color: #47494B;
+    text-decoration: overline;
+    padding: 50px 0 50px;
+}
+
+
+.projectPanel{
+    margin-top: 15px;
+}
+
+
+.panelContents{
+    background-position: bottom;
+    padding: 30px 15px 60px 15px;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+
+
+.panelContents:hover{
+    background: rgba(0,0,0,.6);
+}
+
+
+.projectPanelWrap{
+    margin: -30px -15px -60px -15px;
+    padding: 30px 15px 60px 15px;
+}
+
+
+.projectLink{
+    color: white;
+}
+
+
+.projectLink:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+.projectLink:visited{
+    color: white;
+    text-decoration: none;
+}
+
+
+.panelLine{
+    padding-top: 2px;
+    background-color: #00B4CF;
+}
+
+
+.panelContents:hover .panelText{
+    opacity: 1;
+    transition: .5s ease;
+}
+
+
+.panelName{
+    background: rgba(0,0,0,.7);
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 3px 0 3px;
+    margin: 0 50px 0;
+    transition: .5s ease;
+}
+
+
+.panelContents:hover .panelName{
+    background: none;
+}
+
+
+.panelText{
+    opacity: 0;
+    font-size: 20px;
+}
+
+
+/*Individual Project Backgrounds*/
+.project1{
+    background-image: url(Images/projectBackground1.jpeg);
+    background-size: cover;
+}
+
+
+.project2{
+    background-image: url(Images/projectBackground2.jpeg);
+    background-size: cover;
+}
+
+
+.project3{
+    background-image: url(Images/projectBackground3.jpeg);
+    background-size: cover;
+}
+
+
+.project4{
+    background-image: url(Images/projectBackground4.jpeg);
+    background-size: cover;
+}
+
+
+.project5{
+    background-image: url(Images/projectBackground5.jpeg);
+    background-size: cover;
+}
+
+
+.project6{
+    background-image: url(Images/projectBackground6.jpeg);
+    background-size: cover;
+}
+
+
+/*PROJECT MODALS*/
+#modal{
+    display: none;
+}
+
+
+.projectModalWrap{
+    min-height: 100vh;
+    min-width: 100vw;
+    background: rgba(0,0,0,.6);
+}
+
+
+.projectModal{
+    margin: 5vh 5px 5vh;
+    background-color: #F5F5F5;
+    color: #47494B;
+    border-radius: 10px;
+    padding: 0 0 15px 0;
+    border: 3px solid #00B4CF;
+    display: flex;
+}
+
+
+.closeSymbol{
+    background-color: #00B4CF;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    margin: 20px 20px 0;
+    height: 30px;
+    width: 30px;
+}
+
+
+.modalPicture{
+    border-radius: 10px;
+    border-right: 3px solid #00B4CF;
+    background-image: url(Images/modalPicture.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+    margin-bottom: -15px;
+}
+
+
+.modalTitle{
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: #00B4CF;
+}
+
+
+.modalDescription{
+    margin: 20px 20px 20px;
+    background: none;
+}
+
+
+.modalLink{
+    border-radius: 10px;
+    border: 3px solid #00B4CF;
+    padding: 5px 20px 5px;
+    color: #47494B;
+    transition: ease .2s;
+    background-color: #F5F5F5;
+}
+
+
+.modalLink:hover{
+    background-color: #00B4CF;
+    color: white;
+    text-decoration: none;
+}
+
+
+.modalLink:focus{
+    text-decoration: none;
+
+}
+
+
+.modalBtn{
+    padding: 5px 20px 5px;
+    background-color: pink;
+    border-radius: 10px;
+}
+/*END PROJECT MODALS*/
+/*END PORTFOLIO PAGE*/
+
+
+/*CONTACT ME PAGE*/
+.contactWrap{
+    padding: 50px 0 175px;
+    background-color: #F5F5F5;
+    color: #47494B;
+}
+
+
+.contactTitle{
+    text-decoration: overline;
+    padding: 50px 0;
+}
+
+
+.contactText{
+    margin-bottom: 20px;
+}
+
+
+.contactForm{
+    padding: 5px;
+}
+
+
+.inputForm{
+    padding: 5px 20px 5px;
+    border-radius: 10px;
+    width: 100%;
+    border: 3px solid #00B4CF;
+    background: none;
+    margin: 10px 0 10px;
+}
+
+
+/* The actual popup */
+.popUp {
+    background-color: #00B4CF;
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+    position: sticky;
+}
+
+
+/* Popup arrow */
+.popUp::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #00B4CF transparent transparent transparent;
+}
+
+
+.messageForm{
+    height: 25vh;
+    resize: none;
+}
+
+
+.contactButton{
+    border: 3px solid #00B4CF;
+    border-radius: 10px;
+    padding: 5px 20px 5px;
+    transition: ease .5s;
+    background: none;
+}
+
+
+.contactButton:hover{
+    background-color: #00B4CF;
+    color: white;
+}
+
+
+.confirmationTint{
+    background: rgba(0,0,0,.6);
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.contactConfirmation{
+    margin: 30vh  5px;;
+    background-color: #F5F5F5;
+    padding: 0 0 150px;
+    border-radius: 10px;
+    border: 3px solid #00B4CF;
+    font-size: 30px;
+    max-width: 100vw;
+}
+
+
+#contactConfirmation{
+    display: none;
+}
+
+
+.confirmationTitle{
+    text-decoration: underline;
+    text-decoration-color: #00B4CF;
+    font-size: 40px;
+}
+
+
+.confirmationClose{
+    background-color: #00B4CF;
+    border-radius: 50%;
+    border: none;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    margin-right: 5px;
+    color: white;
+}
+/*END CONTACT ME PAGE*/
+
+
+/*FOOTER*/
+.homeFooter{
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url(Images/navbarBackground.png);
+    padding: 8px 0 8px;
+    font-size: 15px;
+     position: absolute;
+    left: 0 ; right: 0; bottom: 0;
+    height: 50px;
+}
+
+
+.footerName{
+    padding-top: 5px;
+    margin-right: -25px;
+}
+
+
+.footerLink{
+    margin-left: 2px;
+}
+/*END OF FOOTER*/
